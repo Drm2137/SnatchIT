@@ -1,0 +1,95 @@
+1. Presentation Layer
+Purpose: This layer handles the user interface and interaction within the browser. It displays price comparison data to the user and captures user inputs.
+ 
+Components:
+- Browser Extension UI: A lightweight popup or overlay interface that appears when the user activates the extension on an e-commerce site.
+  - Displays a list of prices from different e-commerce platforms.
+  - Includes buttons or options to filter results (e.g., by price, shipping, or availability).
+- Event Listeners: Captures user actions (e.g., clicking the extension icon, selecting a product page) and triggers requests to the business logic layer.
+- Rendering Engine: Uses HTML/CSS/JavaScript (e.g., React or vanilla JS) to dynamically render price comparison data in the browser.
+ 
+Technologies:
+- JavaScript (for browser compatibility)
+- HTML/CSS (for styling the popup)
+- Browser APIs (e.g., Chrome or Firefox WebExtensions API)
+ 
+Interaction: Communicates with the Business Logic Layer via function calls or events to fetch and display price data.
+ 
+---
+ 
+ 2. Business Logic Layer
+Purpose: This layer contains the core logic of the application, processing data and coordinating between the presentation and data access layers.
+ 
+Components:
+- Price Comparison Engine: 
+  - Extracts the product details (e.g., name, model, SKU) from the current e-commerce page.
+  - Normalizes product data to ensure consistent comparison across sites.
+- Search Coordinator: Manages queries to fetch prices from multiple e-commerce platforms.
+- Caching Logic: Temporarily stores recently fetched price data to reduce redundant requests and improve performance.
+- Error Handling: Manages scenarios like unavailable data or network issues, providing fallback options (e.g., cached results).
+ 
+Technologies:
+- JavaScript (running in the extension’s background script)
+- Algorithms for string matching and data normalization
+ 
+Interaction: 
+- Receives product details from the Presentation Layer.
+- Sends requests to the Data Access Layer to fetch price data and returns processed results to the Presentation Layer.
+ 
+---
+ 
+ 3. Data Access Layer
+Purpose: This layer handles communication with external data sources (e.g., e-commerce APIs, web scraping) and abstracts data retrieval logic.
+ 
+Components:
+- API Client: Interfaces with e-commerce APIs (e.g., Amazon, eBay, Walmart) to fetch real-time price data.
+- Web Scraper: Extracts price and product details from e-commerce pages when APIs are unavailable (e.g., using DOM parsing or headless browser techniques).
+- Data Mapper: Converts raw data (JSON, HTML) into a standardized format for the Business Logic Layer.
+- Rate Limiter: Ensures compliance with API usage limits and prevents overloading external services.
+ 
+Technologies:
+- JavaScript (with libraries like Axios for API calls)
+- DOM parsing (via browser APIs like `document.querySelector`)
+- Optional: Backend proxy (e.g., Node.js) for API key management or scraping
+ 
+Interaction: 
+- Receives requests from the Business Logic Layer.
+- Queries external sources and returns raw or mapped data.
+ 
+---
+ 
+4. Infrastructure Layer
+Purpose: This layer provides foundational services and utilities that support the other layers, such as storage, networking, and configuration.
+ 
+Components:
+- Local Storage: Uses browser storage (e.g., `localStorage` or `chrome.storage`) to cache price data, user preferences, and session info.
+- Network Manager: Handles HTTP requests and ensures secure communication with external APIs (e.g., HTTPS, CORS handling).
+- Configuration Service: Stores API keys, e-commerce site URLs, and scraping rules in a secure, maintainable way.
+- Logging Utility: Tracks errors or performance metrics for debugging (stored locally or sent to a remote server if extended).
+ 
+Technologies:
+- Browser APIs (`fetch`, `chrome.storage`)
+- Optional: Cloud backend (e.g., AWS Lambda, Firebase) for advanced features like centralized caching or analytics
+ 
+Interaction: 
+- Provides utilities and services to all other layers (e.g., storage for caching, network for API calls).
+ 
+---
+ 
+ Data Flow Example
+1. User Action: The user visits an e-commerce site (e.g., Amazon) and clicks the "Snatch It" extension.
+2. Presentation Layer: Detects the click, extracts the product URL or page data, and sends it to the Business Logic Layer.
+3. Business Logic Layer: Identifies the product, checks the cache, and requests price data from the Data Access Layer.
+4. Data Access Layer: Queries e-commerce APIs or scrapes other sites (e.g., eBay, Walmart), returning raw price data.
+5. Business Logic Layer: Normalizes and compares the data, then sends the results back to the Presentation Layer.
+6. Presentation Layer: Renders a popup with a sorted list of prices and links.
+7. Infrastructure Layer: Caches the results in `localStorage` and logs the request for debugging.
+ 
+---
+ 
+ Key Considerations
+- Scalability: The architecture can scale by offloading heavy scraping or API calls to a backend server in the Infrastructure Layer.
+- Privacy: Avoid storing sensitive user data; process everything locally unless explicitly needed.
+- Performance: Use caching and rate limiting to minimize latency and API costs.
+- Extensibility: Add new e-commerce sites by updating the Data Access Layer’s API/scraping rules.
+ 
