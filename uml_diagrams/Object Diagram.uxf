@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>260</x>
+      <y>20</y>
+      <w>210</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>rate_limiters
+--
+id.                 string pk
+--
+apiIdentifier    string
+--
+limit.                int
+--
+usedCount.    int
+--
+lastReset.         timestamp
+bg=MAGENTA</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>820</x>
+      <y>350</y>
+      <w>210</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>products
+--
+id                string pk
+--
+name          string
+--  
+model         String
+--
+description   string
+--
+ 
+bg=LIGHT_GRAY</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>260</x>
+      <y>330</y>
+      <w>210</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Cache_entries
+--
+id                  string pk
+--
+ProductId     string
+--
+CachedData   String
+--
+CahedAt.         timestamp
+bg=BLACK</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>260</x>
+      <y>500</y>
+      <w>210</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>price
+--
+id.                 string pk
+--
+product           string
+--
+ecommerceSiteld    string
+--
+price                    decimal
+--
+currency              string
+--
+retrievedAt           timestamp
+--
+details                  string
+
+bg=BLUE</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>810</x>
+      <y>150</y>
+      <w>210</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>logs
+--
+id.                 string pk
+--
+eventyType    string
+--
+message         string
+--
+createdAt         timestamp
+
+
+bg=YELLOW</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>260</x>
+      <y>180</y>
+      <w>210</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Configurations
+--
+id                  string pk
+--
+ConfigKey     string
+--
+ConfigValue   String
+--
+description      string
+bg=ORANGE</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>820</x>
+      <y>540</y>
+      <w>210</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>ecommerce_Sites
+--
+id                  string pk
+--
+name           string
+--
+url                  String
+
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>460</x>
+      <y>360</y>
+      <w>380</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-
+      
+																																																													1</panel_attributes>
+    <additional_attributes>10.0;20.0;360.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>460</x>
+      <y>560</y>
+      <w>380</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+																																																								1</panel_attributes>
+    <additional_attributes>10.0;20.0;360.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>460</x>
+      <y>370</y>
+      <w>230</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>10.0;180.0;150.0;150.0;180.0;130.0;210.0;10.0</additional_attributes>
+  </element>
+</diagram>
