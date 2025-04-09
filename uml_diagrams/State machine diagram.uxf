@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>16</zoom_level>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>352</x>
+      <y>0</y>
+      <w>32</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>type=initial</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>352</x>
+      <y>16</y>
+      <w>176</w>
+      <h>128</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+  user inactive</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>336</x>
+      <y>112</y>
+      <w>80</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>Idle
+valign=top
+
+bg=GRAY</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>272</x>
+      <y>224</y>
+      <w>208</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>Fetching Prices
+
+
+
+valign=top
+
+bg=YELLOW</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>240</x>
+      <y>320</y>
+      <w>288</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>Displaying popup
+bg=BLUE</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>400</x>
+      <y>112</y>
+      <w>368</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+user click extension</panel_attributes>
+    <additional_attributes>10.0;20.0;210.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>352</x>
+      <y>160</y>
+      <w>272</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+ Extract product details
+bg=YELLOW</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>352</x>
+      <y>256</y>
+      <w>48</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+ </panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>464</x>
+      <y>224</y>
+      <w>272</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Prices found</panel_attributes>
+    <additional_attributes>150.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>704</x>
+      <y>224</y>
+      <w>208</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>error or timeout
+bg=RED</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>736</x>
+      <y>112</y>
+      <w>112</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>active
+bg=CYAN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>752</x>
+      <y>144</y>
+      <w>272</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+ Extract product details</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>768</x>
+      <y>320</y>
+      <w>144</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>error 
+bg=PINK</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>512</x>
+      <y>320</y>
+      <w>288</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Displaying popup</panel_attributes>
+    <additional_attributes>160.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>800</x>
+      <y>480</y>
+      <w>80</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>Idle
+valign=top
+
+bg=DARK_GRAY</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>816</x>
+      <y>352</y>
+      <w>256</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+shows error message</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>352</x>
+      <y>352</y>
+      <w>480</w>
+      <h>192</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+user closes popup</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0;280.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>800</x>
+      <y>256</y>
+      <w>48</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+ </panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+</diagram>
