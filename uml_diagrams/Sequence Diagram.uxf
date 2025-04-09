@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>12</zoom_level>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>648</x>
+      <y>540</y>
+      <w>120</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Search
+coordinator</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1284</x>
+      <y>60</y>
+      <w>36</w>
+      <h>504</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;400.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>192</x>
+      <y>120</y>
+      <w>204</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;
+tiggers</panel_attributes>
+    <additional_attributes>10.0;20.0;150.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>360</x>
+      <y>156</y>
+      <w>216</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;
+Sende product
+data</panel_attributes>
+    <additional_attributes>10.0;20.0;160.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>0</x>
+      <y>84</y>
+      <w>228</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;
+click
+Extension</panel_attributes>
+    <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>696</x>
+      <y>264</y>
+      <w>432</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;
+                                  Sends price</panel_attributes>
+    <additional_attributes>10.0;20.0;340.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1092</x>
+      <y>384</y>
+      <w>228</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Update UI</panel_attributes>
+    <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>888</x>
+      <y>432</y>
+      <w>240</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Saves result</panel_attributes>
+    <additional_attributes>10.0;20.0;180.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>144</x>
+      <y>540</y>
+      <w>132</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>User
+bg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>144</x>
+      <y>12</y>
+      <w>132</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>User
+bg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>492</x>
+      <y>0</y>
+      <w>120</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Event
+Listener
+bg=black</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>312</x>
+      <y>540</y>
+      <w>120</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Browser
+Extension
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>324</x>
+      <y>12</y>
+      <w>120</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Browser
+Extension
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>648</x>
+      <y>12</y>
+      <w>120</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Search
+coordinator</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1032</x>
+      <y>540</y>
+      <w>132</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>rendering
+Engine
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1236</x>
+      <y>12</y>
+      <w>120</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Search
+coordinator</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>480</x>
+      <y>540</y>
+      <w>120</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Event
+Listener
+bg=black</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1236</x>
+      <y>540</y>
+      <w>120</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Search
+coordinator</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1092</x>
+      <y>60</y>
+      <w>36</w>
+      <h>504</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;400.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>696</x>
+      <y>60</y>
+      <w>36</w>
+      <h>504</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;400.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>48</y>
+      <w>36</w>
+      <h>516</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;410.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>360</x>
+      <y>60</y>
+      <w>36</w>
+      <h>504</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;400.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>192</x>
+      <y>60</y>
+      <w>36</w>
+      <h>504</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;400.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1092</x>
+      <y>312</y>
+      <w>228</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;
+Sends price list</panel_attributes>
+    <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1032</x>
+      <y>12</y>
+      <w>132</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>rendering
+Engine
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>840</x>
+      <y>12</y>
+      <w>120</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>API Client
+/
+Web Scraper
+bg=black</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>840</x>
+      <y>540</y>
+      <w>120</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>API Client
+/
+Web Scraper
+bg=black</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>888</x>
+      <y>60</y>
+      <w>36</w>
+      <h>504</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;400.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>696</x>
+      <y>204</y>
+      <w>156</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+Send 
+Cached 
+result</panel_attributes>
+    <additional_attributes>10.0;20.0;60.0;20.0;60.0;40.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>180</y>
+      <w>192</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;
+Checks caches</panel_attributes>
+    <additional_attributes>10.0;20.0;140.0;20.0</additional_attributes>
+  </element>
+</diagram>
