@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>36</x>
+      <y>189</y>
+      <w>144</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>Rendering Engine
+(React Vanilla JS)
+bg=PINK</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>36</x>
+      <y>153</y>
+      <w>144</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>Event Listeners
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>18</x>
+      <y>252</y>
+      <w>189</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>Business Logic Layer
+(Background Script or Sen Workers)
+
+
+
+
+valign=top
+
+bg=GRAY</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>36</x>
+      <y>369</y>
+      <w>144</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>Caching Logic
+bg=MAGENTA</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>36</x>
+      <y>297</y>
+      <w>144</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>Price Comparison Engine
+bg=ORANGE</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>36</x>
+      <y>333</y>
+      <w>144</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>Search Coordinatnor
+bg=YELLOW</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>36</x>
+      <y>513</y>
+      <w>153</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>Web Scraper (DOM Parsing)
+bg=PINK</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>18</x>
+      <y>423</y>
+      <w>189</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>Data Access Layer
+(Runnin g in Backgroundscript)
+
+
+
+
+valign=top
+
+bg=YELLOW</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>18</x>
+      <y>117</y>
+      <w>189</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>Presentation Layer
+(in propuar extension)
+
+
+
+
+valign=top
+
+bg=CYAN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>36</x>
+      <y>477</y>
+      <w>153</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>API Client
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>36</x>
+      <y>549</y>
+      <w>153</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>Rate Limiter
+bg=CYAN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>0</x>
+      <y>81</y>
+      <w>225</w>
+      <h>522</h>
+    </coordinates>
+    <panel_attributes>User's Browser
+
+
+
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>288</x>
+      <y>135</y>
+      <w>180</w>
+      <h>279</h>
+    </coordinates>
+    <panel_attributes>Optional Cloud
+Backend
+
+
+
+
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>306</x>
+      <y>234</y>
+      <w>153</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>API Gateway
+(eg. AWS Lambda)
+bg=CYAN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>306</x>
+      <y>180</y>
+      <w>153</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>Scraping Proxy
+(Nodels/ Puppeter)
+bg=BLUE</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>306</x>
+      <y>288</y>
+      <w>153</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>Secure Storage of API
+keys or Configuration
+bg=ORANGE</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>306</x>
+      <y>342</y>
+      <w>153</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>Central Logging
+or Analytics
+bg=MAGENTA</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>216</x>
+      <y>297</y>
+      <w>81</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>243</x>
+      <y>297</y>
+      <w>63</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>531</x>
+      <y>135</y>
+      <w>180</w>
+      <h>279</h>
+    </coordinates>
+    <panel_attributes>External eCommerce
+Platforms
+
+
+
+
+valign=top
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>540</x>
+      <y>171</y>
+      <w>153</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>APIs
+mazon product 
+Advertising Api,Walmart
+API,eBay API)
+bg=PINK</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>540</x>
+      <y>315</y>
+      <w>153</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>Websites for
+Scraping
+(Html content)
+bg=RED</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>459</x>
+      <y>297</y>
+      <w>81</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>495</x>
+      <y>297</y>
+      <w>54</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>40.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
