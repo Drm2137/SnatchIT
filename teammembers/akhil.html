@@ -3,165 +3,138 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SnatchIT - Smart Shopping</title>
+  <title>Akhil's Reflections Page</title>
   <style>
-    * {
-      font-family: 'Aptos', sans-serif;
-      box-sizing: border-box;
-    }
-
     body {
       margin: 0;
-      background-color: #fff;
-      color: #333;
-      line-height: 1.6;
+      padding: 0;
+      font-family: 'Aptos', sans-serif;
+      background-color: #f4f4f4;
+      color: #222;
     }
 
-    header {
-      background-color: #f4f6f8;
-      padding: 3rem 2rem;
-      text-align: center;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    }
-
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
-
-    header p {
-      max-width: 800px;
-      margin: 0 auto;
-      font-size: 1.15rem;
-    }
-
-    strong {
-      color: #6a0dad;
-      display: block;
-      margin-top: 1rem;
-    }
-
-    nav {
-      background-color: #6a0dad;
-      padding: 1rem 2rem;
-      text-align: center;
-    }
-
-    nav a {
-      color: #fff;
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    .section {
-      padding: 2.5rem 1rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    h3 {
-      font-size: 1.75rem;
-      margin-bottom: 1rem;
-      color: #6a0dad;
-      text-align: center;
-    }
-
-    .button-links {
+    .container {
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    .button-group {
+      display: flex;
       gap: 1rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
       justify-content: center;
     }
 
-    .button-links a {
-      background-color: #f3e9fb;
-      color: #6a0dad;
+    .button-group button {
+      background-color: #6a0dad;
+      color: white;
       padding: 0.75rem 1.25rem;
+      border: none;
       border-radius: 8px;
-      text-decoration: none;
-      font-weight: 500;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      font-size: 1rem;
+      cursor: pointer;
       transition: background 0.3s ease;
     }
 
-    .button-links a:hover {
-      background-color: #e4d1f4;
+    .button-group button:hover {
+      background-color: #5a039c;
     }
 
-    ul.repo-links {
-      list-style: none;
-      padding-left: 0;
-      text-align: center;
+    .reflection {
+      display: none;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      margin-bottom: 2rem;
+      padding: 2rem;
+      animation: fadeIn 0.5s ease-in-out;
     }
 
-    ul.repo-links li {
-      margin: 0.75rem 0;
+    h2 {
+      font-size: 1.25rem;
+      line-height: 1.7;
+      margin: 0;
     }
 
-    ul.repo-links a {
-      color: #6a0dad;
-      font-weight: bold;
-      text-decoration: none;
+    .image-container {
+      margin-top: 2rem;
+      animation: fadeIn 2s ease-in;
     }
 
-    ul.repo-links a:hover {
-      text-decoration: underline;
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     }
 
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      background: #f9f9f9;
-      margin-top: 3rem;
-      font-size: 0.9rem;
-      color: #777;
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
-
 <body>
-  <header>
-    <h1>Welcome to SnatchIT 🛍️🛒</h1>
-    <p>
-      A powerful eCommerce web extension designed to make your online shopping experience smarter and more efficient.
-      With SnatchIT, you can easily compare prices across various eCommerce platforms in real time. Whether you're looking for the best deals or trying to find the lowest price on your favorite products, SnatchIT gives you the tools to make informed purchasing decisions instantly.
-      <strong>"Say goodbye to endless browsing and multiple tabs—SnatchIT brings the best prices to you, saving you both time and money."</strong>
-    </p>
-  </header>
+  <div class="container">
+    <h1>Welcome to Akhil's Reflections Page 🚀</h1>
 
-  <nav>
-    <a href="#team">Our Team</a>
-    <a href="#repos">Class Repos</a>
-  </nav>
-
-  <section class="section" id="team">
-    <h3>Our Team Pages</h3>
-    <div class="button-links">
-      <a href="./teammembers/harshini.html">Harshini</a>
-      <a href="./teammembers/Dinesh.html">Dinesh</a>
-      <a href="./teammembers/akhil.html">Akhil</a>
-      <a href="./teammembers/bhavana.html">Bhavana</a>
-      <a href="./teammembers/mahitha.html">Mahitha</a>
-      <a href="./teammembers/prasanna.html">Prasanna</a>
+    <div class="button-group">
+      <button onclick="showReflection(1)">Reflection 1</button>
+      <button onclick="showReflection(2)">Reflection 2</button>
+      <button onclick="showReflection(3)">Reflection 3</button>
     </div>
-  </section>
 
-  <section class="section" id="repos">
-    <h3>Class Repositories</h3>
-    <ul class="repo-links">
-      <li><a href="https://github.com/M0eiz/WeCloud" target="_blank">WeCloud</a></li>
-      <li><a href="https://github.com/Kvishnu3423/Smart-track-management" target="_blank">Smart Track</a></li>
-      <li><a href="https://github.com/SaiTejaPerumalla-5297/Wild_Chefs" target="_blank">Wild Chefs</a></li>
-    </ul>
-  </section>
+    <div id="reflection1" class="reflection">
+      <h2>
+        Establishing a structured and well-documented repository to centralize and manage resources, code, or data for streamlined access and collaboration.
+      </h2>
+    </div>
 
-  <footer>
-    &copy; 2025 SnatchIT. All rights reserved.
-  </footer>
+    <div id="reflection2" class="reflection">
+      <h2>
+        As an Integration Specialist, I developed a custom browser extension to streamline and enhance user workflows by seamlessly bridging web-based applications with internal systems. The extension was designed to interact with specific APIs, capture contextual data directly from the browser, and trigger automated actions—significantly reducing manual input and improving data consistency. I ensured secure authentication, efficient data handling, and a user-friendly interface, all while aligning the tool with business objectives and technical constraints. This initiative not only improved operational efficiency but also exemplified how thoughtful integration can create meaningful, user-centric solutions.
+      </h2>
+    </div>
+
+    <div id="reflection3" class="reflection">
+      <h2>
+        Developing a strong understanding of software architecture principles and gaining proficiency in interpreting and creating UML diagrams to effectively design and communicate complex system structures.
+      </h2>
+    </div>
+
+    <div class="image-container">
+      <img src="images/snatchit-demo.png" alt="snatchIT in Action">
+    </div>
+  </div>
+
+  <script>
+    function showReflection(number) {
+      const all = document.querySelectorAll('.reflection');
+      all.forEach(ref => ref.style.display = 'none');
+
+      const selected = document.getElementById(`reflection${number}`);
+      if (selected) {
+        selected.style.display = 'block';
+      }
+    }
+  </script>
 </body>
 </html>
