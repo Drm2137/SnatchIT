@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
+            background-color: #f0f8ff; /* Light blue background */
             color: #333;
             margin: 0;
             padding: 0;
@@ -22,11 +22,18 @@
             max-width: 600px;
             padding: 20px;
             box-sizing: border-box;
+            background-color: #ffffff; /* White background for the container */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         h1 {
             color: #2c3e50;
             margin-bottom: 20px;
+            background-color: #34495e; /* Dark blue background for header */
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
         }
 
         h2 {
@@ -40,11 +47,25 @@
         }
 
         li {
-            background-color: #fff;
+            background-color: #ecf0f1; /* Light gray background for list items */
             border-radius: 8px;
             margin: 10px 0;
             padding: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        li:hover {
+            background-color: #d5dbdb; /* Slightly darker gray on hover */
+        }
+
+        li img {
+            width: 50px; /* Set a size for the images */
+            height: 50px;
+            margin-right: 20px;
+            border-radius: 50%;
         }
 
         @media screen and (max-width: 600px) {
@@ -59,12 +80,15 @@
         <h1>Welcome to Harshini's SnatchIT Page!</h1>
         <ul>
             <li>
+                <img src="https://via.placeholder.com/50" alt="SnatchIT Icon">
                 <h2>SnatchIT, Simplify your search for the best online deals.</h2>
             </li>
             <li>
+                <img src="https://via.placeholder.com/50" alt="Deals Icon">
                 <h2>Unlock the best deals effortlessly with SnatchIT.</h2>
             </li>
             <li>
+                <img src="https://via.placeholder.com/50" alt="Comparison Icon">
                 <h2>Price comparison assistant for users.</h2>
             </li>
         </ul>
