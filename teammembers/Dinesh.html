@@ -3,103 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dinesh's SnatchIT Page</title>
-    <style>
-        /* Global Styles */
-        :root {
-            --primary-color: #34495e;
-            --background-color: #f0f8ff;
-            --card-bg-color: #ecf0f1;
-            --card-hover-color: #d5dbdb;
-            --text-color: #2c3e50;
-            --white-color: #ffffff;
-            --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: var(--background-color);
-            color: var(--text-color);
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .container {
-            text-align: center;
-            max-width: 600px;
-            width: 100%;
-            padding: 20px;
-            background-color: var(--white-color);
-            border-radius: 10px;
-            box-shadow: var(--shadow);
-        }
-
-        h1 {
-            color: var(--white-color);
-            background-color: var(--primary-color);
-            margin-bottom: 20px;
-            padding: 10px;
-            border-radius: 5px;
-        }
-
-        h2 {
-            color: var(--text-color);
-            margin: 20px 0;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        li {
-            background-color: var(--card-bg-color);
-            border-radius: 8px;
-            margin: 10px 0;
-            padding: 15px;
-            box-shadow: var(--shadow);
-            transition: background-color 0.3s ease-in-out;
-        }
-
-        li:hover {
-            background-color: var(--card-hover-color);
-        }
-
-        /* Mobile responsiveness */
-        @media (max-width: 600px) {
-            h2 {
-                font-size: 16px;
-            }
-        }
-
-        /* Additional Styling for Lists */
-        li {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-    </style>
+    <title>snatchIT - Smart eCommerce Shopping</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+    <script src="scripts.js" defer></script> <!-- Link to external JavaScript -->
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Include Bootstrap for responsive design -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to Dinesh's SnatchIT Page!</h1>
-        <ul>
-            <li>
-                <h2>Buy Online with SnatchIT</h2>
-            </li>
-            <li>
-                <h2> Today’s Top Deals</h2>
-            </li>
-            <li>
-                <h2> customer service to assist with inquiries and resolve issues.</h2>
-            </li>
-        </ul>
-    </div>
-</body>
-</html>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">snatchIT</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#benefits">Benefits</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#download">Download</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero bg-primary text-white text-center py-5">
+            <div class="container">
+                <h1 class="display-4">Enhance Your Shopping Experience with snatchIT</h1>
+                <p class="lead">Compare prices across multiple eCommerce platforms in real-time and find the best deals instantly.</p>
+                <a href="#download" class="btn btn-light btn-lg">Download snatchIT Now</a>
+            </div>
+        </section>
+        <!-- Features Section -->
+        <section id="features" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Key Features</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <i class="fas fa-search-dollar fa-3x card-img-top mt-3"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Real-Time Price Comparison</h5>
+                                <p class="card-text">Instantly compare prices across various eCommerce platforms to ensure you get the best deal.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <i class="fas fa-bell fa-3x card-img-top mt-3"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Smart Deal Alerts</h5>
+                                <p class="card-text">Set personalized alerts for your favorite products and receive timely notifications about discounts and promotions.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <i class="fas fa-plug fa-3x card-img-top mt-3"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Seamless Integration</h5>
+                                <p class="card-text">snatchIT integrates effortlessly with your preferred online stores, providing a smooth shopping experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section
