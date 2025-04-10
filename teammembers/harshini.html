@@ -1,22 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset= "UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Harshini's page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshini's page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* Light blue background */
+            color: #333;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 900px;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin: 10px 0;
+        }
+
+        p {
+            color: #7f8c8d;
+            font-size: 16px;
+        }
+
+        @media screen and (max-width: 600px) {
+            h2 {
+                font-size: 16px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <ul>
-        <li>
-            <h2>Building the Repo</h2>
-        </li>
-        <li>
-            <h2>Brewing SnatchIT( a fine browser extension)</h2>
-        </li>
-        <li>
-            <h2>Working on a browser extension, learning UML diagrams including the  layered architecture</h2>
-        </li>
-    </ul>
+    <div class="container">
+        <h1>Welcome to Harshini's SnatchIT Page!</h1>
+        <div class="card">
+            <img src="https://via.placeholder.com/80" alt="SnatchIT Icon">
+            <h2>SnatchIT, Simplify your search for the best online deals.</h2>
+            <p>Find the best deals effortlessly with our price comparison tool.</p>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/80" alt="Deals Icon">
+            <h2>Unlock the best deals effortlessly with SnatchIT.</h2>
+            <p>SnatchIT helps you save time and money by comparing prices across multiple platforms.</p>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/80" alt="Comparison Icon">
+            <h2>Price comparison assistant for users.</h2>
+            <p>Our assistant makes finding the best prices for products easy and efficient.</p>
+        </div>
+    </div>
 </body>
 </html>
