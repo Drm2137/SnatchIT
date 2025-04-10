@@ -3,12 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dinesh's page</title>
+    <title>Dinesh's SnatchIT Page</title>
     <style>
+        /* Global Styles */
+        :root {
+            --primary-color: #34495e;
+            --background-color: #f0f8ff;
+            --card-bg-color: #ecf0f1;
+            --card-hover-color: #d5dbdb;
+            --text-color: #2c3e50;
+            --white-color: #ffffff;
+            --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f8ff; /* Light blue background */
-            color: #333;
+            background-color: var(--background-color);
+            color: var(--text-color);
             margin: 0;
             padding: 0;
             height: 100vh;
@@ -20,58 +31,58 @@
         .container {
             text-align: center;
             max-width: 600px;
+            width: 100%;
             padding: 20px;
-            box-sizing: border-box;
-            background-color: #ffffff; /* White background for the container */
+            background-color: var(--white-color);
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: var(--shadow);
         }
 
         h1 {
-            color: #2c3e50;
+            color: var(--white-color);
+            background-color: var(--primary-color);
             margin-bottom: 20px;
-            background-color: #34495e; /* Dark blue background for header */
-            color: white;
             padding: 10px;
             border-radius: 5px;
         }
 
         h2 {
-            color: #2c3e50;
+            color: var(--text-color);
             margin: 20px 0;
         }
 
         ul {
             list-style: none;
             padding: 0;
+            margin: 0;
         }
 
         li {
-            background-color: #ecf0f1; /* Light gray background for list items */
+            background-color: var(--card-bg-color);
             border-radius: 8px;
             margin: 10px 0;
             padding: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            display: flex;
-            align-items: center;
+            box-shadow: var(--shadow);
             transition: background-color 0.3s ease-in-out;
         }
 
         li:hover {
-            background-color: #d5dbdb; /* Slightly darker gray on hover */
+            background-color: var(--card-hover-color);
         }
 
-        li img {
-            width: 50px; /* Set a size for the images */
-            height: 50px;
-            margin-right: 20px;
-            border-radius: 50%;
-        }
-
-        @media screen and (max-width: 600px) {
+        /* Mobile responsiveness */
+        @media (max-width: 600px) {
             h2 {
                 font-size: 16px;
             }
+        }
+
+        /* Additional Styling for Lists */
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
     </style>
 </head>
@@ -80,15 +91,12 @@
         <h1>Welcome to Dinesh's SnatchIT Page!</h1>
         <ul>
             <li>
-                <img src="https://via.placeholder.com/50" alt="SnatchIT Icon">
                 <h2>SnatchIT, Simplify your search for the best online deals.</h2>
             </li>
             <li>
-                <img src="https://via.placeholder.com/50" alt="Deals Icon">
                 <h2>Unlock the best deals effortlessly with SnatchIT.</h2>
             </li>
             <li>
-                <img src="https://via.placeholder.com/50" alt="Comparison Icon">
                 <h2>Price comparison assistant for users.</h2>
             </li>
         </ul>
