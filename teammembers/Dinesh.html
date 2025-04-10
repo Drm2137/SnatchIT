@@ -2,23 +2,37 @@
 <html lang="en">
 
 <head>
-<meta charset= "UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Dinesh's page</title>
-</head>
-<body>
-    <ul>
-        <li>
-            <h2>SnatchIT,Simplify your search for the best online deals.</h2>
-        </li>
-        <li>
-            <h2>Unlock the best deals effortlessly with snatchIT.
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinesh's page</title>
+    <style>
+        .scrolling-text {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+        }
 
-</h2>
-        </li>
-        <li>
-            <h2>Price comparison assistant for Users.</h2>
-        </li>
-    </ul>
+        .scrolling-text p {
+            display: inline-block;
+            animation: scroll 10s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="scrolling-text">
+        <p>&#128299; SnatchIT, Simplify your search for the best online deals. &#128299; Unlock the best deals effortlessly with snatchIT. &#128299; Price comparison assistant for Users.</p>
+    </div>
 </body>
+
 </html>
