@@ -32,4 +32,136 @@
     header p {
       max-width: 800px;
       margin: 0 auto;
-      font-size:
+      font-size: 1.15rem;
+    }
+
+    strong {
+      color: #6a0dad;
+      display: block;
+      margin-top: 1rem;
+    }
+
+    nav {
+      background-color: #6a0dad;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .section {
+      padding: 2.5rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h3 {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+      color: #6a0dad;
+      text-align: center;
+    }
+
+    .button-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .button-links a {
+      background-color: #f3e9fb;
+      color: #6a0dad;
+      padding: 0.75rem 1.25rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 500;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      transition: background 0.3s ease;
+    }
+
+    .button-links a:hover {
+      background-color: #e4d1f4;
+    }
+
+    ul.repo-links {
+      list-style: none;
+      padding-left: 0;
+      text-align: center;
+    }
+
+    ul.repo-links li {
+      margin: 0.75rem 0;
+    }
+
+    ul.repo-links a {
+      color: #6a0dad;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    ul.repo-links a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #f9f9f9;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to SnatchIT 🛍️🛒</h1>
+    <p>
+      A powerful eCommerce web extension designed to make your online shopping experience smarter and more efficient.
+      With SnatchIT, you can easily compare prices across various eCommerce platforms in real time. Whether you're looking for the best deals or trying to find the lowest price on your favorite products, SnatchIT gives you the tools to make informed purchasing decisions instantly.
+      <strong>"Say goodbye to endless browsing and multiple tabs—SnatchIT brings the best prices to you, saving you both time and money."</strong>
+    </p>
+  </header>
+
+  <nav>
+    <a href="#team">Our Team</a>
+    <a href="#repos">Class Repos</a>
+  </nav>
+
+  <section class="section" id="team">
+    <h3>Our Team Pages</h3>
+    <div class="button-links">
+      <a href="./teammembers/harshini.html">Harshini</a>
+      <a href="./teammembers/Dinesh.html">Dinesh</a>
+      <a href="./teammembers/akhil.html">Akhil</a>
+      <a href="./teammembers/bhavana.html">Bhavana</a>
+      <a href="./teammembers/mahitha.html">Mahitha</a>
+      <a href="./teammembers/prasanna.html">Prasanna</a>
+    </div>
+  </section>
+
+  <section class="section" id="repos">
+    <h3>Class Repositories</h3>
+    <ul class="repo-links">
+      <li><a href="https://github.com/M0eiz/WeCloud" target="_blank">WeCloud</a></li>
+      <li><a href="https://github.com/Kvishnu3423/Smart-track-management" target="_blank">Smart Track</a></li>
+      <li><a href="https://github.com/SaiTejaPerumalla-5297/Wild_Chefs" target="_blank">Wild Chefs</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    &copy; 2025 SnatchIT. All rights reserved.
+  </footer>
+</body>
+</html>
