@@ -3,82 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>snatchIT - Smart eCommerce Shopping</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
-    <script src="scripts.js" defer></script> <!-- Link to external JavaScript -->
-    <!-- Include Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <!-- Include Bootstrap for responsive design -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Welcome to SnatchIT WebPage</title>
+    <style>
+        /* General Reset & Body Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            padding: 20px;
+            margin: 10px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+            color: #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.2em;
+        }
+
+        h2:nth-of-type(1) { color: #2ecc71; }
+        h2:nth-of-type(2) { color: #3498db; }
+        h2:nth-of-type(3) { color: #e74c3c; }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-left: 20px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        #content {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+            text-align: left;
+        }
+
+        /* Color classes for dynamic styling */
+        .green { color: #2ecc71; }
+        .blue { color: #3498db; }
+        .red { color: #e74c3c; }
+    </style>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                <a class="navbar-brand" href="#">snatchIT</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#features">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#benefits">Benefits</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#download">Download</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <!-- Hero Section -->
-        <section class="hero bg-primary text-white text-center py-5">
-            <div class="container">
-                <h1 class="display-4">Enhance Your Shopping Experience with snatchIT</h1>
-                <p class="lead">Compare prices across multiple eCommerce platforms in real-time and find the best deals instantly.</p>
-                <a href="#download" class="btn btn-light btn-lg">Download snatchIT Now</a>
-            </div>
-        </section>
-        <!-- Features Section -->
-        <section id="features" class="py-5">
-            <div class="container">
-                <h2 class="text-center mb-4">Key Features</h2>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card">
-                            <i class="fas fa-search-dollar fa-3x card-img-top mt-3"></i>
-                            <div class="card-body">
-                                <h5 class="card-title">Real-Time Price Comparison</h5>
-                                <p class="card-text">Instantly compare prices across various eCommerce platforms to ensure you get the best deal.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <i class="fas fa-bell fa-3x card-img-top mt-3"></i>
-                            <div class="card-body">
-                                <h5 class="card-title">Smart Deal Alerts</h5>
-                                <p class="card-text">Set personalized alerts for your favorite products and receive timely notifications about discounts and promotions.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <i class="fas fa-plug fa-3x card-img-top mt-3"></i>
-                            <div class="card-body">
-                                <h5 class="card-title">Seamless Integration</h5>
-                                <p class="card-text">snatchIT integrates effortlessly with your preferred online stores, providing a smooth shopping experience.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section
+    <h1>Welcome to SnatchIT - Your Smart Shopping Assistant</h1>
+    <h2><span>🔍</span> SnatchIT helps you find the best deals across multiple e-commerce sites in real time. <button onclick="showContent('learnMore')">Learn More</button></h2>
+    <h2><span>⏳</span> Save time and money with snatchIT. <button onclick="showContent('getStarted')">Get Started</button></h2>
+    <h2><span>💸</span> SnatchIT brings the best online deals to your fingertips in seconds. <button onclick="showContent('shopNow')">Shop Now</button></h2>
+
+    <div id="content">
+        <h3 id="contentTitle"></h3>
+        <p id="contentDescription"></p>
+    </div>
+
+    <script>
+        function showContent(contentType) {
+            const content = document.getElementById('content');
+            const title = document.getElementById('contentTitle');
+            const desc = document.getElementById('contentDescription');
+
+            content.style.display = 'block';
+
+            // Reset color classes
+            title.className = '';
+            desc.className = '';
+
+            if (contentType === 'learnMore') {
+                title.innerText = 'Learn More About SnatchIT';
+                desc.innerText = 'SnatchIT automatically compares real-time prices for the same product across multiple e-commerce sites while you browse. It uses smart matching algorithms to find the best deals, discounts, and coupons instantly. No more tab switching—SnatchIT saves you time and money with one click.';
+                title.classList.add('green');
+                desc.classList.add('green');
+            } else if (contentType === 'getStarted') {
+                title.innerText = 'Get Started with SnatchIT';
+                desc.innerText = 'Save time and money with SnatchIT by instantly comparing prices across top e-commerce sites. Find the best deals, discounts, and offers without opening multiple tabs. SnatchIT makes your online shopping smarter, faster, and more efficient.';
+                title.classList.add('blue');
+                desc.classList.add('blue');
+            } else if (contentType === 'shopNow') {
+                title.innerText = 'Start Shopping with SnatchIT';
+                desc.innerText = 'SnatchIT instantly compares prices from multiple online stores while you browse. It shows the best deals and discounts right on your screen. Shop smarter and save money effortlessly with SnatchIT.';
+                title.classList.add('red');
+                desc.classList.add('red');
+            }
+        }
+    </script>
+</body>
+</html>
