@@ -1,24 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset= "UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Prasanna's page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>snatchIT - Smart Shopping</title>
+    <style>
+        body {
+            background-color: #ADD8E6; /* Light blue background */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #4CAF50; /* Green header */
+            color: white;
+            padding: 20px 0;
+        }
+        main {
+            padding: 20px;
+        }
+        .button {
+            background-color: #4CAF50; /* Green button */
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+        .content {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: white;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            text-align: left;
+        }
+        .button:hover + .content {
+            display: block;
+        }
+    </style>
 </head>
 <body>
-    <ul>
-        <li>
-            <h2>One click, endless savings.</h2>
-        </li>
-        <li>
-            <h2>Shopping smarter, not harder..
 
-</h2>
-        </li>
-        <li>
-            <h2>It just pops up with a better price.</h2>
-        </li>
-    </ul>
+<header>
+    <h1>Welcome to snatchIT</h1>
+    <p>Your smart shopping assistant</p>
+</header>
+
+<main>
+    <button class="button">One click, endless savings.</button>
+    <div class="content">
+        <p>With snatchIT, you no longer need to search through countless websites. Get the best deals instantly with just one click.</p>
+    </div>
+
+    <button class="button">Shopping smarter, not harder.</button>
+    <div class="content">
+        <p>Stop wasting time comparing prices manually. snatchIT makes shopping easy and efficient by comparing prices in real-time.</p>
+    </div>
+
+    <button class="button">It just pops up with a better price.</button>
+    <div class="content">
+        <p>SnatchIT automatically finds better prices for you, ensuring that you never miss a better deal while shopping online.</p>
+    </div>
+</main>
+
 </body>
 </html>
