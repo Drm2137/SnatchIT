@@ -1,131 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harshini's page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f8ff; /* Light blue background */
-            color: #333;
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Harshini's Page</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f8ff;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-        .container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            max-width: 900px;
-            padding: 20px;
-            box-sizing: border-box;
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+    h1 {
+      margin-top: 2rem;
+      font-size: 2.2rem;
+      text-align: center;
+      color: #2c3e50;
+      animation: fadeIn 1s ease-in-out;
+    }
 
-        .card {
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      max-width: 1000px;
+      padding: 30px;
+      box-sizing: border-box;
+    }
 
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 25px 20px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: slideUp 1s ease;
+    }
 
-        .card img {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            margin-bottom: 15px;
-        }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
 
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 20px;
-        }
+    .card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
 
-        h2 {
-            color: #2c3e50;
-            margin: 10px 0;
-        }
+    .card h2 {
+      margin: 10px 0;
+      color: #2c3e50;
+      font-size: 1.4rem;
+    }
 
-        p {
-            color: #7f8c8d;
-            font-size: 16px;
-        }
-   .back-button {
-            margin: 40px 0;
-            background-color: #add8e6; /* Light blue */
-            color: #333;
-            padding: 12px 24px;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
+    .card p {
+      color: #555;
+      font-size: 15px;
+      line-height: 1.5;
+      text-align: left;
+    }
 
-     .back-button:hover {
-          background-color: #87ceeb; /* Slightly darker blue on hover */
-        }
+    .back-button {
+      margin: 30px 0 60px;
+      background-color: #add8e6;
+      color: #333;
+      padding: 12px 28px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
 
-        @media screen and (max-width: 600px) {
-            h2 {
-                font-size: 16px;
-            }
-        }
-    </style>
+    .back-button:hover {
+      background-color: #87ceeb;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(-10px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes slideUp {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @media (max-width: 600px) {
+      .card h2 {
+        font-size: 18px;
+      }
+      .card p {
+        font-size: 14px;
+      }
+    }
+  </style>
 </head>
 <body>
-     <h1>Welcome to Harshini's  Page 😊</h1>
-    <div class="container">
-        <h1>Explore Smart Shopping with Harshini's SnatchIT</h1>
-        <div class="card">
-            <img src="https://media.istockphoto.com/id/1049807888/photo/woman-hand-putting-money-coin-into-piggy-for-saving-money-wealth-and-financial-concept.jpg?s=612x612&w=0&k=20&c=6acbk1v6GoEQWcDtbW9mWk8w8D5DMZUBA_DevvywAK4=" alt="SnatchIT Icon">
-            <h2>Maximize Your Savings.</h2>
-            <p>SnatchIT helps you save time and money by comparing prices across multiple platforms..</p>
-        </div>
-        <div class="card">
-            <h2>Kent Beck "Tidy First"</h2>
-            <p>​💡 Kent Beck’s “Tidy First?” – In a Nutshell
-Kent Beck encourages making small, non-functional improvements—called tidyings—before adding new features. These changes improve code clarity, safety, and maintainability.
-
-<br>🔑 Core Concepts:
-Tidyings: Cleanups like renaming variables, removing unused code, or adding guard clauses. No behavior changes, just better structure.
-
-<br>Structure vs. Behavior: Keep tidyings (structure changes) separate from feature work (behavior changes) to make code easier to understand and manage.
-<br>Economic View: Tidying is a smart investment—spending a little time now saves a lot later when making future changes.
-<br>📐 Coupling & Cohesion:
-Coupling: The more places a change affects, the harder and riskier it is.
-Cohesion: When related logic is grouped together, it’s easier to modify and maintain.
-                
-<br>✅ Beck’s takeaway:
-Clean code = low coupling + high cohesion → safer and faster development.</p>
-        </div>
-        <div class="card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXSsWMyXpT3jg64Om7Q3SkTOg5QYzRJXH_pg&s" alt="Comparison Icon">
-            <h2>Your Shopping Sidekick</h2>
-            <p>Our assistant makes finding the best prices for products easy and efficient.</p>
-        </div>
+  <h1>Welcome to Harshini's Page 😊</h1>
+  
+  <div class="container">
+    <div class="card">
+      <img src="https://media.istockphoto.com/id/1049807888/photo/woman-hand-putting-money-coin-into-piggy-for-saving-money-wealth-and-financial-concept.jpg?s=612x612&w=0&k=20&c=6acbk1v6GoEQWcDtbW9mWk8w8D5DMZUBA_DevvywAK4=" alt="SnatchIT Icon">
+      <h2>Maximize Your Savings</h2>
+      <p>
+        SnatchIT helps you save time and money by comparing prices across multiple platforms, ensuring you get the best deals instantly.
+      </p>
     </div>
 
-    
-     <!-- 🔙 Back to Main Page Button -->
-    <a href="../index.html">
-        <button class="back-button">⬅ Back to Main Page</button>
-    </a>
+    <div class="card">
+      <h2>Kent Beck – Tidy First?</h2>
+      <p>
+        💡 <strong>Tidy First</strong> encourages developers to clean code structure before adding new features. These small non-functional changes—called "tidyings"—boost clarity and safety.
+        <br><br>
+        🔑 <strong>Core Ideas:</strong><br>
+        - Tidyings = renaming, removing dead code, adding guard clauses<br>
+        - Separate structure (tidy) from behavior (features)<br>
+        - Smart investment: short-term effort, long-term gain<br><br>
+        📐 <strong>Coupling & Cohesion:</strong><br>
+        - Coupling: widespread impact of a change = bad<br>
+        - Cohesion: related code stays together = good<br><br>
+        ✅ <strong>Conclusion:</strong> Low coupling + high cohesion = clean, maintainable code.
+      </p>
+    </div>
 
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXSsWMyXpT3jg64Om7Q3SkTOg5QYzRJXH_pg&s" alt="Comparison Icon">
+      <h2>Your Shopping Sidekick</h2>
+      <p>
+        Our intelligent assistant simplifies price tracking, helping you shop smarter with effortless comparisons across platforms.
+      </p>
+    </div>
+  </div>
+
+  <a href="../index.html">
+    <button class="back-button">⬅ Back to Main Page</button>
+  </a>
 </body>
 </html>
