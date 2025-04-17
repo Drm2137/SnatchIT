@@ -9,6 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 20px;
+            text-align: center;
         }
 
         h1 {
@@ -28,6 +29,27 @@
         p {
             font-size: 16px;
             line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+
+        /* Back button styling */
+        .back-button {
+            display: inline-block;
+            background-color: brown;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 40px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #5a2e0f;
         }
     </style>
 </head>
@@ -43,6 +65,9 @@
 
     <h2>🔒 Secure and Private Browsing</h2>
     <p>The extension doesn’t track your personal data or browsing habits beyond shopping sites, ensuring a secure and privacy-focused experience.</p>
+
+    <!-- 🔙 Back to Main Page Button -->
+    <a href="../index.html" class="back-button">⬅ Back to Main Page</a>
 
 </body>
 </html>
