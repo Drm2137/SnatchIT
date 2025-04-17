@@ -11,6 +11,9 @@
       font-family: 'Aptos', sans-serif;
       background-color: #f4f4f4;
       color: #222;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .container {
@@ -90,6 +93,24 @@
         transform: translateY(0);
       }
     }
+
+    /* 🔙 Back button styles */
+    .back-button {
+      margin: 30px 0;
+      background-color: #6a0dad; /* Purple */
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+
+    .back-button:hover {
+      background-color: #5a039c;
+    }
   </style>
 </head>
 <body>
@@ -125,12 +146,15 @@
     </div>
   </div>
 
+  <!-- 🔙 Back to Main Page Button -->
+  <a href="../index.html" class="back-button">⬅ Back to Main Page</a>
+
   <script>
     function showReflection(number) {
       const all = document.querySelectorAll('.reflection');
       all.forEach(ref => ref.style.display = 'none');
 
-      const selected = document.getElementById(`reflection${number}`);
+      const selected = document.getElementById(reflection${number});
       if (selected) {
         selected.style.display = 'block';
       }
