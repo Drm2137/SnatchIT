@@ -1,146 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>snatchIT - Smart Shopping</title>
-    <!-- Include Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        body {
-            background-color: #ADD8E6;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px 0;
-        }
-        main {
-            padding: 20px;
-        }
-        .button-container {
-            margin: 10px 0;
-        }
-        .button {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            transition: background-color 0.3s;
-        }
-        .button:hover {
-            opacity: 0.8;
-        }
-        .content {
-            display: none;
-            margin-top: 10px;
-            padding: 10px;
-            background-color: white;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            font-size: 16px;
-            text-align: left;
-        }
-        /* Specific button colors */
-        .button-green {
-            background-color: #4CAF50;
-            color: white;
-        }
-        .button-blue {
-            background-color: #008CBA;
-            color: white;
-        }
-        .button-red {
-            background-color: #f44336;
-            color: white;
-        }
-        /* Active button styling */
-        .active {
-            background-color: #45a049;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>snatchIT - Smart Shopping</title>
+  <!-- Include Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      background-color: #ADD8E6;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px 0;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .button-container {
+      margin: 10px 0;
+    }
+
+    .button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      opacity: 0.8;
+    }
+
+    .content {
+      display: none;
+      margin-top: 10px;
+      padding: 10px;
+      background-color: white;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      text-align: left;
+    }
+
+    .button-green {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .button-blue {
+      background-color: #008CBA;
+      color: white;
+    }
+
+    .button-red {
+      background-color: #f44336;
+      color: white;
+    }
+
+    .active {
+      background-color: #45a049;
+    }
+
+    /* 🆕 Back button styles */
+    .back-button {
+      margin: 30px auto 40px;
+      background-color: gray;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    .back-button:hover {
+      background-color: #555;
+    }
+  </style>
 </head>
 <body>
 
 <header>
-    <h1>Welcome to snatchIT</h1>
-    <p>Your smart shopping assistant</p>
+  <h1>Welcome to snatchIT</h1>
+  <p>Your smart shopping assistant</p>
 </header>
 
 <main>
-    <div class="button-container">
-        <button id="button1" class="button button-green">
-            <i class="fa fa-thumbs-up"></i> One click, endless savings.
-        </button>
-        <div id="content1" class="content">
-            <p>With snatchIT, you no longer need to search through countless websites. Get the best deals instantly with just one click.</p>
-        </div>
+  <div class="button-container">
+    <button id="button1" class="button button-green">
+      <i class="fa fa-thumbs-up"></i> One click, endless savings.
+    </button>
+    <div id="content1" class="content">
+      <p>With snatchIT, you no longer need to search through countless websites. Get the best deals instantly with just one click.</p>
     </div>
+  </div>
 
-    <div class="button-container">
-        <button id="button2" class="button button-blue">
-            <i class="fa fa-lightbulb-o"></i> Shopping smarter, not harder.
-        </button>
-        <div id="content2" class="content">
-            <p>Stop wasting time comparing prices manually. snatchIT makes shopping easy and efficient by comparing prices in real-time.</p>
-        </div>
+  <div class="button-container">
+    <button id="button2" class="button button-blue">
+      <i class="fa fa-lightbulb-o"></i> Shopping smarter, not harder.
+    </button>
+    <div id="content2" class="content">
+      <p>Stop wasting time comparing prices manually. snatchIT makes shopping easy and efficient by comparing prices in real-time.</p>
     </div>
+  </div>
 
-    <div class="button-container">
-        <button id="button3" class="button button-red">
-            <i class="fa fa-tag"></i> It just pops up with a better price.
-        </button>
-        <div id="content3" class="content">
-            <p>SnatchIT automatically finds better prices for you, ensuring that you never miss a better deal while shopping online.</p>
-        </div>
+  <div class="button-container">
+    <button id="button3" class="button button-red">
+      <i class="fa fa-tag"></i> It just pops up with a better price.
+    </button>
+    <div id="content3" class="content">
+      <p>SnatchIT automatically finds better prices for you, ensuring that you never miss a better deal while shopping online.</p>
     </div>
+  </div>
 </main>
 
+<!-- 🔙 Back to Main Page Button -->
+<a href="../index.html" class="back-button">⬅ Back to Main Page</a>
+
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Function to handle button clicks
-        function showContent(contentId, buttonId) {
-            // Hide all content sections
-            const contents = document.querySelectorAll('.content');
-            contents.forEach(content => {
-                content.style.display = 'none';
-            });
+  document.addEventListener('DOMContentLoaded', function() {
+    function showContent(contentId, buttonId) {
+      const contents = document.querySelectorAll('.content');
+      contents.forEach(content => content.style.display = 'none');
 
-            // Remove 'active' class from all buttons
-            const buttons = document.querySelectorAll('.button');
-            buttons.forEach(button => {
-                button.classList.remove('active');
-            });
+      const buttons = document.querySelectorAll('.button');
+      buttons.forEach(button => button.classList.remove('active'));
 
-            // Display the clicked content section
-            document.getElementById(contentId).style.display = 'block';
+      document.getElementById(contentId).style.display = 'block';
+      document.getElementById(buttonId).classList.add('active');
+    }
 
-            // Add 'active' class to the clicked button
-            document.getElementById(buttonId).classList.add('active');
-        }
-
-        // Add event listeners to buttons
-        document.getElementById('button1').addEventListener('click', function() {
-            showContent('content1', 'button1');
-        });
-        document.getElementById('button2').addEventListener('click', function() {
-            showContent('content2', 'button2');
-        });
-        document.getElementById('button3').addEventListener('click', function() {
-            showContent('content3', 'button3');
-        });
-
-        // Optionally, display the first content section by default
-        showContent('content1', 'button1');
+    document.getElementById('button1').addEventListener('click', function() {
+      showContent('content1', 'button1');
     });
+    document.getElementById('button2').addEventListener('click', function() {
+      showContent('content2', 'button2');
+    });
+    document.getElementById('button3').addEventListener('click', function() {
+      showContent('content3', 'button3');
+    });
+
+    // Show first content by default
+    showContent('content1', 'button1');
+  });
 </script>
 
 </body>
