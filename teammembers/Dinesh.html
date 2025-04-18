@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to SnatchIT WebPage</title>
     <style>
-        /* General Reset & Body Styles */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f9;
@@ -72,14 +72,13 @@
             width: 80%;
             max-width: 600px;
             text-align: left;
+            white-space: pre-wrap;
         }
 
-        /* Color classes for dynamic styling */
         .green { color: #2ecc71; }
         .blue { color: #3498db; }
         .red { color: #e74c3c; }
 
-        /* Back button styling */
         .back-button {
             margin-top: 40px;
             background-color: #2ecc71;
@@ -101,14 +100,13 @@
     <h1>Welcome to SnatchIT - Your Smart Shopping Assistant</h1>
     <h2><span>🔍</span> SnatchIT helps you find the best deals across multiple e-commerce sites in real time. <button onclick="showContent('learnMore')">Learn More</button></h2>
     <h2><span>⏳</span> Save time and money with snatchIT. <button onclick="showContent('getStarted')">Get Started</button></h2>
-    <h2><span>💸</span> SnatchIT brings the best online deals to your fingertips in seconds. <button onclick="showContent('shopNow')">Shop Now</button></h2>
+    <h2><span>💸</span> About Tidy First by Kent Beck <button onclick="showContent('shopNow')">Overview</button></h2>
 
     <div id="content">
         <h3 id="contentTitle"></h3>
         <p id="contentDescription"></p>
     </div>
 
-    <!-- Back Button with Emoji -->
     <a href="../index.html">
         <button class="back-button">🔙 Back to Main Page</button>
     </a>
@@ -121,7 +119,6 @@
 
             content.style.display = 'block';
 
-            // Reset color classes
             title.className = '';
             desc.className = '';
 
@@ -136,8 +133,8 @@
                 title.classList.add('blue');
                 desc.classList.add('blue');
             } else if (contentType === 'shopNow') {
-                title.innerText = 'Start Shopping with SnatchIT';
-                desc.innerText = 'SnatchIT instantly compares prices from multiple online stores while you browse. It shows the best deals and discounts right on your screen. Shop smarter and save money effortlessly with SnatchIT.';
+                title.innerText = 'About Tidy First? by Kent Beck';
+                desc.innerText = 'In Tidy First?, Kent Beck suggests that software design should be done step-by-step, focusing on small improvements to the code before adding new features. This is called tidying—making small changes like renaming variables, reorganizing code, or removing unnecessary parts to make the code easier to read and understand without changing its behavior. Tidying is quick, low-risk, and much smaller than big refactoring.\n\nBeck stresses separating structural changes (tidyings) from behavioral changes (features). This makes the code easier to review, helps with maintaining it, and reduces complexity. Instead of trying to get the perfect design from the start, Beck promotes incremental improvement—small, continuous changes that fit well with agile development.\n\nTidying reduces coupling (interdependence between parts of the code) and increases cohesion (keeping related code together), leading to cleaner, more maintainable software. The key idea is: “Make the change easy (tidy), then make the easy change (feature).” By tidying first, you can minimize bugs, improve long-term quality, and avoid technical debt.';
                 title.classList.add('red');
                 desc.classList.add('red');
             }
