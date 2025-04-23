@@ -5,11 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Welcome to SnatchIT WebPage</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
       font-family: Arial, sans-serif;
@@ -44,9 +40,8 @@
       font-size: 1.2em;
     }
 
-    h2:nth-of-type(1) { color: #2ecc71; }
-    h2:nth-of-type(2) { color: #3498db; }
-    h2:nth-of-type(3) { color: #e74c3c; }
+    h2:nth-of-type(1) { color: #8e44ad; }
+    h2:nth-of-type(2) { color: #16a085; }
 
     button {
       background-color: #3498db;
@@ -79,8 +74,6 @@
     .green { color: #2ecc71; }
     .blue { color: #3498db; }
     .red { color: #e74c3c; }
-    .purple { color: #8e44ad; }
-    .teal { color: #16a085; }
 
     .back-button {
       margin-top: 40px;
@@ -108,7 +101,7 @@
       text-align: left;
       margin-bottom: 20px;
       line-height: 1.5;
-      display: none; /* Hide by default */
+      display: none;
     }
 
     code {
@@ -141,6 +134,14 @@
     git init creates a brand new local repository from scratch, while git clone copies an existing remote repository to your local machine.
   </p>
 
+  <!-- Microservices Architecture Section -->
+  <h2 style="color: #e67e22;">📦 Microservices Architecture 
+    <button onclick="showContent('micro')">More on Microservices</button>
+  </h2>
+  <p id="microText" class="section-text">
+    Microservices break down applications into smaller, independent units, each responsible for a specific task. This structure enhances scalability and ensures the system remains operational even if one component fails. However, implementing microservices also presents challenges, including maintaining data consistency and managing interactions between services.
+  </p>
+
   <main>
     <h2><span>🔍</span> SnatchIT compares prices in real time 
       <button onclick="showContent('learnMore')">Learn More</button>
@@ -168,25 +169,24 @@
       const title = document.getElementById('contentTitle');
       const desc = document.getElementById('contentDescription');
 
-      // Hide all section-text elements first
-      document.getElementById('githubText').style.display = 'none';
-      document.getElementById('cliText').style.display = 'none';
+      // Hide all section-text elements
+      ['githubText', 'cliText', 'microText'].forEach(id => {
+        document.getElementById(id).style.display = 'none';
+      });
 
-      // Hide dynamic block by default
+      // Hide dynamic content by default
       content.style.display = 'none';
-
-      // Reset classes
       title.className = '';
       desc.className = '';
 
-      // GitHub & CLI sections
+      // Show appropriate reflection
       if (contentType === 'github') {
         document.getElementById('githubText').style.display = 'block';
       } else if (contentType === 'cli') {
         document.getElementById('cliText').style.display = 'block';
-      }
-      // Main dynamic content section
-      else {
+      } else if (contentType === 'micro') {
+        document.getElementById('microText').style.display = 'block';
+      } else {
         content.style.display = 'block';
 
         if (contentType === 'learnMore') {
