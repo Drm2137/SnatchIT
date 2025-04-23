@@ -75,6 +75,34 @@
       background-color: #45a049;
     }
 
+    /* h3 tags as buttons */
+    .button-h3 {
+      background-color: #008CBA; /* Blue background */
+      color: white;              /* White text */
+      padding: 12px 24px;        /* Padding inside the button */
+      font-size: 16px;           /* Font size */
+      font-weight: bold;         /* Bold text */
+      text-align: center;        /* Center the text */
+      border-radius: 5px;        /* Rounded corners */
+      border: none;              /* Remove default border */
+      cursor: pointer;          /* Show pointer cursor on hover */
+      display: inline-block;     /* Make it act like a button */
+      transition: all 0.3s ease; /* Smooth transition for effects */
+      text-transform: uppercase; /* Uppercase text */
+      margin-bottom: 10px;       /* Space between the h3 and the content */
+    }
+
+    /* Hover effect */
+    .button-h3:hover {
+      background-color: #005f73; /* Darker blue on hover */
+      transform: scale(1.05);     /* Slightly enlarge the button */
+    }
+
+    /* Active effect (when clicked) */
+    .button-h3:active {
+      transform: scale(0.98); /* Slightly shrink the button */
+    }
+
     /* Back button styles */
     .back-button {
       margin: 30px auto 40px;
@@ -101,49 +129,63 @@
   <h1>Welcome to snatchIT</h1>
   <p>Your smart shopping assistant</p>
 </header>
-  <section>
+
+<section>
   <h2 class="button-style">Reflections</h2>
-  
+
   <article>
-    <h3>GitHub Repo</h3>
-    <p>From learning about GitHub repositories, I have gained hands-on experience managing code using GitHub.</p>
-    <p><strong>Q:</strong> Do you think showcasing GitHub projects is a good way to build a tech portfolio?</p>
-    <p><strong>A:</strong> Sharing my projects on GitHub helps me demonstrate what I’ve learned and what I can actually build.</p>
-  </article>
-
-    <article>
-      <h3>CLI Learns</h3>
-      <p>I learned to use the CLI for managing Git and GitHub, handling tasks like branching, merging, pushing, pulling, stashing, rebasing, and viewing logs.
-</p>
-      <p><strong>Q:</strong> What’s the difference between merging and rebasing in Git?</p>
-      <p><strong>A:</strong> Merging combines two branches with a merge commit, preserving history, while rebasing rewrites history by applying commits on top of another branch for a cleaner, linear history</p>
-    </article>
-
-<main>
-  <div class="button-container">
-    <button id="button1" class="button button-green">
-      <i class="fa fa-thumbs-up"></i> One click, endless savings.
+    <!-- Button for GitHub Repo question/answer -->
+    <button class="button-h3" id="button1">
+      GitHub Repo
     </button>
     <div id="content1" class="content">
+      <p>From learning about GitHub repositories, I have gained hands-on experience managing code using GitHub.</p>
+      <p><strong>Q:</strong> Do you think showcasing GitHub projects is a good way to build a tech portfolio?</p>
+      <p><strong>A:</strong> Sharing my projects on GitHub helps me demonstrate what I’ve learned and what I can actually build.</p>
+    </div>
+  </article>
+
+  <article>
+    <!-- Button for CLI Learns question/answer -->
+    <button class="button-h3" id="button2">
+      CLI Learns
+    </button>
+    <div id="content2" class="content">
+      <p>I learned to use the CLI for managing Git and GitHub, handling tasks like branching, merging, pushing, pulling, stashing, rebasing, and viewing logs.</p>
+      <p><strong>Q:</strong> What’s the difference between merging and rebasing in Git?</p>
+      <p><strong>A:</strong> Merging combines two branches with a merge commit, preserving history, while rebasing rewrites history by applying commits on top of another branch for a cleaner, linear history.</p>
+    </div>
+  </article>
+</section>
+
+<main>
+  <!-- Button for One Click Savings -->
+  <div class="button-container">
+    <button id="button3" class="button button-green">
+      <i class="fa fa-thumbs-up"></i> One click, endless savings.
+    </button>
+    <div id="content3" class="content">
       <p>With snatchIT, you no longer need to search through countless websites. Get the best deals instantly with just one click.</p>
     </div>
   </div>
 
+  <!-- Button for Shopping Smarter -->
   <div class="button-container">
-    <button id="button2" class="button button-blue">
+    <button id="button4" class="button button-blue">
       <i class="fa fa-lightbulb-o"></i> Shopping smarter, not harder.
     </button>
-    <div id="content2" class="content">
+    <div id="content4" class="content">
       <p>Stop wasting time comparing prices manually. snatchIT makes shopping easy and efficient by comparing prices in real-time.</p>
     </div>
   </div>
 
+  <!-- Button for Tidy First? Summary -->
   <div class="button-container">
-    <button id="button3" class="button button-red">
+    <button id="button5" class="button button-red">
       <i class="fa fa-book"></i> Tidy First? Summary
     </button>
-    <div id="content3" class="content">
-      <p><strong>"Tidy First?"</strong> by Kent Beck presents a practical approach to improving software design. Instead of jumping into new features, Beck encourages making small, thoughtful cleanups—like renaming variables, breaking down large functions, or reorganizing code structure—right before you work on a section. These low-risk improvements don’t aim for perfection, but rather make the next step easier and safer. He emphasizes that good design evolves gradually, driven by real feedback. The key message: keep it simple, stay flexible, and improve as you go.</p>
+    <div id="content5" class="content">
+      <p><strong>"Tidy First?"</strong> by Kent Beck presents a practical approach to improving software design...</p>
     </div>
   </div>
 </main>
@@ -164,6 +206,7 @@
       document.getElementById(buttonId).classList.add('active');
     }
 
+    // Attach event listeners to buttons
     document.getElementById('button1').addEventListener('click', function() {
       showContent('content1', 'button1');
     });
@@ -173,8 +216,14 @@
     document.getElementById('button3').addEventListener('click', function() {
       showContent('content3', 'button3');
     });
+    document.getElementById('button4').addEventListener('click', function() {
+      showContent('content4', 'button4');
+    });
+    document.getElementById('button5').addEventListener('click', function() {
+      showContent('content5', 'button5');
+    });
 
-    // Show first content by default
+    // Show the first content by default
     showContent('content1', 'button1');
   });
 </script>
