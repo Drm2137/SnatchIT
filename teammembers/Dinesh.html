@@ -1,166 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to SnatchIT WebPage</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome to SnatchIT WebPage</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-            flex-direction: column;
-        }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: auto;
+      text-align: center;
+      padding: 40px 0;
+    }
 
-        h1 {
-            font-size: 2.5em;
-            color: #333;
-            margin-bottom: 30px;
-        }
+    h1 {
+      font-size: 2.5em;
+      color: #333;
+      margin-bottom: 30px;
+    }
 
-        h2 {
-            padding: 20px;
-            margin: 10px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            width: 80%;
-            max-width: 600px;
-            color: #333;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 1.2em;
-        }
+    h2 {
+      padding: 20px;
+      margin: 10px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 80%;
+      max-width: 600px;
+      color: #333;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.2em;
+    }
 
-        h2:nth-of-type(1) { color: #2ecc71; }
-        h2:nth-of-type(2) { color: #3498db; }
-        h2:nth-of-type(3) { color: #e74c3c; }
+    h2:nth-of-type(1) { color: #2ecc71; }
+    h2:nth-of-type(2) { color: #3498db; }
+    h2:nth-of-type(3) { color: #e74c3c; }
 
-        button {
-            background-color: #3498db;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1em;
-            margin-left: 20px;
-        }
+    button {
+      background-color: #3498db;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+      margin-left: 20px;
+    }
 
-        button:hover {
-            background-color: #2980b9;
-        }
+    button:hover {
+      background-color: #2980b9;
+    }
 
-        #content {
-            display: none;
-            margin-top: 20px;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            width: 80%;
-            max-width: 600px;
-            text-align: left;
-            white-space: pre-wrap;
-        }
+    #content {
+      display: none;
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 80%;
+      max-width: 600px;
+      text-align: left;
+      white-space: pre-wrap;
+    }
 
-        .green { color: #2ecc71; }
-        .blue { color: #3498db; }
-        .red { color: #e74c3c; }
+    .green { color: #2ecc71; }
+    .blue { color: #3498db; }
+    .red { color: #e74c3c; }
+    .purple { color: #8e44ad; }
+    .teal { color: #16a085; }
 
-        .back-button {
-            margin-top: 40px;
-            background-color: #2ecc71;
-            color: white;
-            padding: 12px 24px;
-            border: none;
-            border-radius: 5px;
-            font-size: 1em;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
+    .back-button {
+      margin-top: 40px;
+      background-color: #2ecc71;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
 
-        .back-button:hover {
-            background-color: #27ae60;
-        }
-    </style>
+    .back-button:hover {
+      background-color: #27ae60;
+    }
+
+    p.section-text {
+      width: 80%;
+      max-width: 600px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      text-align: left;
+      margin-bottom: 20px;
+      line-height: 1.5;
+      display: none; /* Hide by default */
+    }
+
+    code {
+      background-color: #eee;
+      padding: 2px 4px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to SnatchIT - Your Smart Shopping Assistant</h1>
-    <header>
-        <h1>SnatchIT</h1>
-    </header>
+  <h1>Welcome to SnatchIT - Your Smart Shopping Assistant</h1>
 
-    <ul>
-        <li>
-            <h2>Repository</h2>I learned a lot about Github actions<br>
-            <h3></h3>How to set up GitHub Actions for CI/CD<br>
-            <h3></h3>TCI (Continuous Integration) ensures your code is tested automatically when you update it.
-CD (Continuous Deployment/Delivery) means your code can be deployed automatically after passing tests.<br>
-                This command records or snapshots the file permanently in the version history.<br>
-        </li>
-        <li>
-            <h2>CLI learns </h2>"I learned alot about git clone Repo."<br>
-            <h3>Q1 What’s the difference between git init and git clone?</h3><br>
-            <h3> A  git init creates a new local repo; git clone copies an existing remote repo</h3><br>
-            <h3>Q2 What if you clone a private repo?</h3><br>
-            <h3> A You’ll need to authenticate (e.g., using SSH or personal access token)</h3><br>
-                name arrays are useful when you want to work with a list of items such as numbers, stings or objects<br>
-        </li>
-    </ul>
-    <main>
-    <h2><span>🔍</span> SnatchIT helps you find the best deals across multiple e-commerce sites in real time. <button onclick="showContent('learnMore')">Learn More</button></h2>
-    <h2><span>⏳</span> Save time and money with snatchIT. <button onclick="showContent('getStarted')">Get Started</button></h2>
-    <h2><span>📘</span> About Tidy First by Kent Beck <button onclick="showContent('shopNow')">Overview</button></h2>
+  <!-- GitHub & Repos Section -->
+  <h2 style="color: #8e44ad;">💾 GitHub & Repos 
+    <button onclick="showContent('github')">More on GitHub</button>
+  </h2>
+  <p id="githubText" class="section-text">
+    I explored how Git and GitHub help manage source code. I learned how to commit changes, push to a repository, and track version history using VS Code. I also learned how to create repositories on GitHub and collaborate effectively with teams.
+  </p>
+
+  <!-- CLI Learns Section -->
+  <h2 style="color: #16a085;">💻 CLI Learns 
+    <button onclick="showContent('cli')">More on CLI</button>
+  </h2>
+  <p id="cliText" class="section-text">
+    "I learned a lot about <strong>git clone</strong>." I also explored how to navigate folders, create files, and execute scripts efficiently. The speed and control the CLI offers are unmatched. One of the most useful commands I learned is <strong>git status</strong>—it shows what changes have been staged, committed, or are pending, and what’s ready to be committed. 
+    <br><br>
+    <strong>What’s the difference between git init and git clone?</strong><br>
+    git init creates a brand new local repository from scratch, while git clone copies an existing remote repository to your local machine.
+  </p>
+
+  <main>
+    <h2><span>🔍</span> SnatchIT compares prices in real time 
+      <button onclick="showContent('learnMore')">Learn More</button>
+    </h2>
+    <h2><span>⏳</span> Save time and money effortlessly 
+      <button onclick="showContent('getStarted')">Get Started</button>
+    </h2>
+    <h2><span>📘</span> About *Tidy First?* by Kent Beck 
+      <button onclick="showContent('shopNow')">Overview</button>
+    </h2>
 
     <div id="content">
-        <h3 id="contentTitle"></h3>
-        <p id="contentDescription"></p>
+      <h3 id="contentTitle"></h3>
+      <p id="contentDescription"></p>
     </div>
 
     <a href="../index.html">
-        <button class="back-button">🔙 Back to Main Page</button>
+      <button class="back-button">🔙 Back to Main Page</button>
     </a>
+  </main>
 
-    <script>
-        function showContent(contentType) {
-            const content = document.getElementById('content');
-            const title = document.getElementById('contentTitle');
-            const desc = document.getElementById('contentDescription');
+  <script>
+    function showContent(contentType) {
+      const content = document.getElementById('content');
+      const title = document.getElementById('contentTitle');
+      const desc = document.getElementById('contentDescription');
 
-            content.style.display = 'block';
+      // Hide all section-text elements first
+      document.getElementById('githubText').style.display = 'none';
+      document.getElementById('cliText').style.display = 'none';
 
-            title.className = '';
-            desc.className = '';
+      // Hide dynamic block by default
+      content.style.display = 'none';
 
-            if (contentType === 'learnMore') {
-                title.innerText = 'Learn More About SnatchIT';
-                desc.innerText = 'SnatchIT automatically compares real-time prices for the same product across multiple e-commerce sites while you browse. It uses smart matching algorithms to find the best deals, discounts, and coupons instantly. No more tab switching—SnatchIT saves you time and money with one click.';
-                title.classList.add('green');
-                desc.classList.add('green');
-            } else if (contentType === 'getStarted') {
-                title.innerText = 'Get Started with SnatchIT';
-                desc.innerText = 'Save time and money with SnatchIT by instantly comparing prices across top e-commerce sites. Find the best deals, discounts, and offers without opening multiple tabs. SnatchIT makes your online shopping smarter, faster, and more efficient.';
-                title.classList.add('blue');
-                desc.classList.add('blue');
-            } else if (contentType === 'shopNow') {
-                title.innerText = 'About Tidy First? by Kent Beck';
-                desc.innerText = 'In Tidy First?, Kent Beck suggests that software design should be done step-by-step, focusing on small improvements to the code before adding new features. This is called tidying—making small changes like renaming variables, reorganizing code, or removing unnecessary parts to make the code easier to read and understand without changing its behavior. Tidying is quick, low-risk, and much smaller than big refactoring.\n\nBeck stresses separating structural changes (tidyings) from behavioral changes (features). This makes the code easier to review, helps with maintaining it, and reduces complexity. Instead of trying to get the perfect design from the start, Beck promotes incremental improvement—small, continuous changes that fit well with agile development.\n\nTidying reduces coupling (interdependence between parts of the code) and increases cohesion (keeping related code together), leading to cleaner, more maintainable software. The key idea is: “Make the change easy (tidy), then make the easy change (feature).” By tidying first, you can minimize bugs, improve long-term quality, and avoid technical debt.';
-                title.classList.add('red');
-                desc.classList.add('red');
-            }
+      // Reset classes
+      title.className = '';
+      desc.className = '';
+
+      // GitHub & CLI sections
+      if (contentType === 'github') {
+        document.getElementById('githubText').style.display = 'block';
+      } else if (contentType === 'cli') {
+        document.getElementById('cliText').style.display = 'block';
+      }
+      // Main dynamic content section
+      else {
+        content.style.display = 'block';
+
+        if (contentType === 'learnMore') {
+          title.innerText = 'Learn More About SnatchIT';
+          desc.innerText =
+            'SnatchIT automatically compares real-time prices for the same product across multiple e-commerce platforms. Using intelligent matching algorithms, it identifies the best deals, discounts, and coupons instantly—no more switching between tabs.';
+          title.classList.add('green');
+          desc.classList.add('green');
+        } else if (contentType === 'getStarted') {
+          title.innerText = 'Getting Started with SnatchIT';
+          desc.innerText =
+            'Start using SnatchIT to instantly compare prices across top e-commerce websites. Discover the best offers and make smarter purchases with just one click—fast, simple, and efficient.';
+          title.classList.add('blue');
+          desc.classList.add('blue');
+        } else if (contentType === 'shopNow') {
+          title.innerText = 'Kent Beck & Empirical Software Design - Tidy First?';
+          desc.innerText =
+            'In *Tidy First?*, Kent Beck advocates for making small, incremental improvements to code—referred to as "tidying"—before adding new features. The focus isn’t on achieving perfection but on clearing the path for your next step. Clear and structured code helps teams and even AI tools operate better.';
+          title.classList.add('red');
+          desc.classList.add('red');
         }
-    </script>
+      }
+    }
+  </script>
 </body>
 </html>
